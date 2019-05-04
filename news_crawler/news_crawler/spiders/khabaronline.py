@@ -33,5 +33,7 @@ class KhabaronlineSpider(Spider):
         yield Request(next_page_url, callback=self.parse_category)
 
     def parse_news(self, response):
-        pass
+        title = response.xpath('//*[@class="title"]/a/text()').extract_first()
+        summary = response.xpath('//*[@class="summary introtext"]/text()').extract_first()
+        content = response.xpath('//*[@class="item-text"]/div').extract_first()
 
