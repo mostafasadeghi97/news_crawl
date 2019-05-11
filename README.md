@@ -2,8 +2,8 @@
 News Crawler
 ========
 
-: author: Mostafa Sadeghi
-: date: 2019/05/04
+:author: Mostafa Sadeghi
+:date: 2019/05/04
 
 News clawer provides search for some news websites in Iran
 
