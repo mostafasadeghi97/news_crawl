@@ -17,7 +17,27 @@ Installation
 =============
 create a virtual environment to create a self-contained directory tree that contains a Python installation for a particular version of Python, plus a number of additional packages needed by this project.
 
-## virtualenv -p pyhton3 .env
+virtualenv -p pyhton3 .env
+--------------------------
 
-Subtitles with dashes
-<h1>code block example</h1>
+activate the virtualenv
+source .env/bin/activate
+-----------------------
+
+git clone https://github.com/mostafasadeghi97/news_crawl.git
+------------------------------------------------------------
+
+cd news_crawl
+-------------
+
+pip install -r requirements.txt
+-------------------------------
+
+python3 manage.py migrate
+-------------------------
+
+python3 manage.py runserver
+---------------------------
+
+in your browser go to localhost:8000
+
