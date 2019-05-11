@@ -43,3 +43,14 @@ python3 manage.py runserver
 in your browser go to localhost:8000
 ------------------------------------
 
+
+for crawl news website do following instructions
+
+cd news_crawler
+---------------
+
+scrapy crawl khabaronline -o items.csv
+--------------------------------------
+
+
+see items.csv in this directory that updates as time goes on
