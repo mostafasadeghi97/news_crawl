@@ -18,3 +18,4 @@ Installation
 create a virtual environment to create a self-contained directory tree that contains a Python installation for a particular version of Python, plus a number of additional packages needed by this project.
 
 virtualenv -p pyhton3 .env
+python3 manage.py migrate`
