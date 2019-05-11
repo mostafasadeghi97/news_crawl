@@ -21,6 +21,7 @@ virtualenv -p pyhton3 .env
 --------------------------
 
 activate the virtualenv
+
 source .env/bin/activate
 -----------------------
 
@@ -40,4 +41,5 @@ python3 manage.py runserver
 ---------------------------
 
 in your browser go to localhost:8000
+------------------------------------
 
