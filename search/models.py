@@ -4,8 +4,10 @@ from django.db import models
 
 # Store document content
 class Document(models.Model):
-    title = models.CharField(max_length=200, null=True, blank=True)
-    content = models.TextField()
+    category = models.IntegerField(default=1)
+    title = models.CharField(max_length=300, null=True, blank=True)
+    summary = models.TextField(null=True,blank=True)
+    content = models.TextField(null=True, blank=True)
 
 # Store term frequency in a document
 # The score is calculated at the end

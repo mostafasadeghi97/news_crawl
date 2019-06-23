@@ -90,9 +90,13 @@ DOWNLOAD_DELAY = 5
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 import os
 import sys
-import django
 
-sys.path.append(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), ".."))
+# DJANGO INTEGRATION
+
+sys.path.append(os.path.dirname(os.path.abspath('.')))
+# Do not forget the change iCrawler part based on your project name
 os.environ['DJANGO_SETTINGS_MODULE'] = 'webapp.settings'
 
+# This is required only if Django Version > 1.8
+import django
 django.setup()

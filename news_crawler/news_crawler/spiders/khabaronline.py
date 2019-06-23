@@ -1,10 +1,11 @@
 from time import sleep
-
+from search.models import Document
 from scrapy import Spider
 from selenium import webdriver
 from scrapy.selector import Selector
 from scrapy.http import Request
 from selenium.common.exceptions import NoSuchElementException
+
 
 class KhabaronlineSpider(Spider):
     name = 'khabaronline'
@@ -38,10 +39,12 @@ class KhabaronlineSpider(Spider):
         date = response.xpath('//*[@class="col-6 col-sm-4 item-date"]/span/text()').extract_first()
         a = response.xpath('//*[@class="item-body"]//div//text()').extract()
         content=''
+        category = response.meta.get('category')
         for i in a:
             content+=i
+
+        Document.objects.create(category=int(category),summary=summary,title = title, content=content)
         
-        yield {'category':response.meta.get('category'),'title':title,'conetent':content}
 
 
 
