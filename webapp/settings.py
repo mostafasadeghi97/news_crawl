@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'front_view',
     'debug_toolbar',
+    'search',
 ]
 
 MIDDLEWARE = [
