@@ -37,13 +37,14 @@ class KhabaronlineSpider(Spider):
         title = response.xpath('//*[@class="title"]/a/text()').extract_first()
         summary = response.xpath('//*[@class="summary introtext"]/text()').extract_first()
         date = response.xpath('//*[@class="col-6 col-sm-4 item-date"]/span/text()').extract_first()
+        image_link = response.xpath('//img[@itemprop="image"]/@src').extract_first()
         a = response.xpath('//*[@class="item-body"]//div//text()').extract()
         content=''
         category = response.meta.get('category')
         for i in a:
             content+=i
 
-        Document.objects.create(category=int(category),summary=summary,title = title, content=content)
+        Document.objects.create(category=int(category),summary=summary,title = title, content=content, date=date, image_link=image_link)
         
 
 
