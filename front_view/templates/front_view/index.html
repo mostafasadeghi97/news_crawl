@@ -26,144 +26,7 @@
 
 <body>
     <!-- Header Area Start -->
-    <header class="header-area">
-        <div class="top-header">
-            <div class="container h-100">
-                <div class="row h-100 align-items-center">
-                    <!-- Breaking News Area -->
-                    <div class="col-12 col-md-6">
-                        <div class="breaking-news-area">
-                            <h5 class="breaking-news-title">Breaking news</h5>
-                            <div id="breakingNewsTicker" class="ticker">
-                                <ul>
-                                    <li><a href='{% static "#" %}'>Brexit breakthrough in Brussels comes after week of drama</a></li>
-                                    <li><a href='{% static "#" %}'>Brexit breakthrough in Brussels</a></li>
-                                    <li><a href='{% static "#" %}'>Brexit breakthrough in Brussels comes after week of drama</a></li>
-                                    <li><a href='{% static "#" %}'>Brex comes after week of drama</a></li>
-                                    <li><a href='{% static "#" %}'>Brexit breakthrough in Bweek of drama</a></li>
-                                    <li><a href='{% static "#" %}'>Brexit bssels comes after week of drama</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Stock News Area -->
-                    <div class="col-12 col-md-6">
-                        <div class="stock-news-area">
-                            <div id="stockNewsTicker" class="ticker">
-                                <ul>
-                                    <li>
-                                        <div class="single-stock-report">
-                                            <div class="stock-values">
-                                                <span>eur/usd</span>
-                                                <span>1.1862</span>
-                                            </div>
-                                            <div class="stock-index minus-index">
-                                                <h4>0.18</h4>
-                                            </div>
-                                        </div>
-                                        <div class="single-stock-report">
-                                            <div class="stock-values">
-                                                <span>BTC/usd</span>
-                                                <span>15.674.99</span>
-                                            </div>
-                                            <div class="stock-index plus-index">
-                                                <h4>8.60</h4>
-                                            </div>
-                                        </div>
-                                        <div class="single-stock-report">
-                                            <div class="stock-values">
-                                                <span>ETH/usd</span>
-                                                <span>674.99</span>
-                                            </div>
-                                            <div class="stock-index minus-index">
-                                                <h4>13.60</h4>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="single-stock-report">
-                                            <div class="stock-values">
-                                                <span>eur/usd</span>
-                                                <span>1.1862</span>
-                                            </div>
-                                            <div class="stock-index minus-index">
-                                                <h4>0.18</h4>
-                                            </div>
-                                        </div>
-                                        <div class="single-stock-report">
-                                            <div class="stock-values">
-                                                <span>BTC/usd</span>
-                                                <span>15.674.99</span>
-                                            </div>
-                                            <div class="stock-index plus-index">
-                                                <h4>8.60</h4>
-                                            </div>
-                                        </div>
-                                        <div class="single-stock-report">
-                                            <div class="stock-values">
-                                                <span>ETH/usd</span>
-                                                <span>674.99</span>
-                                            </div>
-                                            <div class="stock-index minus-index">
-                                                <h4>13.60</h4>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="single-stock-report">
-                                            <div class="stock-values">
-                                                <span>eur/usd</span>
-                                                <span>1.1862</span>
-                                            </div>
-                                            <div class="stock-index minus-index">
-                                                <h4>3.95</h4>
-                                            </div>
-                                        </div>
-                                        <div class="single-stock-report">
-                                            <div class="stock-values">
-                                                <span>BTC/usd</span>
-                                                <span>15.674.99</span>
-                                            </div>
-                                            <div class="stock-index plus-index">
-                                                <h4>4.78</h4>
-                                            </div>
-                                        </div>
-                                        <div class="single-stock-report">
-                                            <div class="stock-values">
-                                                <span>ETH/usd</span>
-                                                <span>674.99</span>
-                                            </div>
-                                            <div class="stock-index minus-index">
-                                                <h4>11.37</h4>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Middle Header Area -->
-        <div class="middle-header">
-            <div class="container h-100">
-                <div class="row h-100 align-items-center">
-                    <!-- Logo Area -->
-                    <div class="col-12 col-md-4">
-                        <div class="logo-area">
-                            <a href='{% static "index.html" %}'><img src='{% static "img/core-img/logo.png" %}' alt="logo"></a>
-                        </div>
-                    </div>
-                    <!-- Header Advert Area -->
-                    <div class="col-12 col-md-8">
-                        <div class="header-advert-area">
-                            <a href='{% static "#" %}'><img src='{% static "img/bg-img/top-advert.png" %}' alt="header-add"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    
         <!-- Bottom Header Area -->
         <div class="bottom-header">
             <div class="container h-100">
@@ -175,41 +38,59 @@
                                 <div class="collapse navbar-collapse" id="gazetteMenu">
                                     <ul class="navbar-nav mr-auto">
                                         <li class="nav-item active">
-                                            <a class="nav-link" href='{% static "#" %}'>Today <span class="sr-only">(current)</span></a>
+                                            <a class="nav-link">جستجوی خبری<span class="sr-only">(current)</span></a>
                                         </li>
                                         <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href='{% static "#" %}' id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+                                            <a class="nav-link dropdown-toggle" href='{% static "#" %}' id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">صفحه ها</a>
                                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <a class="dropdown-item" href='{% static "index.html" %}'>Home</a>
-                                                <a class="dropdown-item" href='{% static "catagory.html" %}'>Catagory</a>
-                                                <a class="dropdown-item" href='{% static "single-post.html" %}'>Single Post</a>
-                                                <a class="dropdown-item" href='{% static "about-us.html" %}'>About Us</a>
-                                                <a class="dropdown-item" href='{% static "contact.html" %}'>Contact</a>
+                                                <a class="dropdown-item" href='{% static "about-us.html" %}'>درباره ما</a>
+                                                <a class="dropdown-item" href='{% static "contact.html" %}'>ارتباط با ما</a>
                                             </div>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href='{% static "#" %}'>Politics</a>
+                                            <a class="nav-link" href='/category/1'>سیاسی</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href='{% static "#" %}'>Lifestyle</a>
+                                            <a class="nav-link" href='/category/2'>اقتصادی</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href='{% static "#" %}'>Travel</a>
+                                            <a class="nav-link" href='/category/3'>فرهنگ</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href='{% static "#" %}'>Health</a>
+                                            <a class="nav-link" href='/category/4'>جامعه</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href='{% static "#" %}'>Entertainment</a>
+                                            <a class="nav-link" href='/category/5'> بین المللی</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href='{% static "#" %}'>sport</a>
+                                            <a class="nav-link" href='/category/6'>ورزش</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href='/category/7'>دانش</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href='/category/8'>کامپیوتر </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href='/category/9'> طنز</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href='/category/10'> چندرسانه ای</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href='/category/11'>  وبلاگ</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href='/category/12'>  استانی </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href='/category/13'>  گردشگری</a>
                                         </li>
                                     </ul>
                                     <!-- Search Form -->
                                     <div class="header-search-form mr-auto">
-                                        <form action="#">
-                                            <input type="search" placeholder="Input your keyword then press enter..." id="search" name="search">
+                                        <form action="/search">
+                                            <input type="search" placeholder="Input your keyword then press enter..." id="search" name="query">
                                             <input class="d-none" type="submit" value="submit">
                                         </form>
                                     </div>
@@ -230,20 +111,23 @@
     <!-- Welcome Blog Slide Area Start -->
     <section class="welcome-blog-post-slide owl-carousel">
         <!-- Single Blog Post -->
-        <div class="single-blog-post-slide bg-img background-overlay-5" style="background-image: url(static/img/bg-img/1.jpg);">
+        {% for post in news %}
+        <div class="single-blog-post-slide bg-img background-overlay-5" style="background-image: url({{post.image_link}});">
             <!-- Single Blog Post Content -->
             <div class="single-blog-post-content">
                 <div class="tags">
-                    <a href='{% static "#" %}'>crypto</a>
+                    <a href='{% static "#" %}'>{{post.category}}</a>
                 </div>
-                <h3><a href='{% static "#" %}' class="font-pt">Crypto world goes mad</a></h3>
+                <h3><a href='{% static "#" %}' class="font-pt">{{post.title}}</a></h3>
                 <div class="date">
-                    <a href='{% static "#" %}'>March 29, 2018</a>
+                    <a href='{% static "#" %}'>{{post.data}}</a>
                 </div>
             </div>
         </div>
+        {% endfor %}
+    </section>
         <!-- Single Blog Post -->
-        <div class="single-blog-post-slide bg-img background-overlay-5" style="background-image: url(static/img/bg-img/2.jpg);">
+        {% comment %} <div class="single-blog-post-slide bg-img background-overlay-5" style="background-image: url(static/img/bg-img/2.jpg);">
             <!-- Single Blog Post Content -->
             <div class="single-blog-post-content">
                 <div class="tags">
@@ -280,31 +164,12 @@
                     <a href='{% static "#" %}'>March 29, 2018</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </div> {% endcomment %}
+    
     <!-- Welcome Blog Slide Area End -->
 
     <!-- Latest News Marquee Area Start -->
-    <div class="latest-news-marquee-area">
-        <div class="simple-marquee-container">
-            <div class="marquee">
-                <ul class="marquee-content-items">
-                    <li>
-                        <a href='{% static "#" %}'><span class="latest-news-time">10:40</span> The Facebook Live stream that could presage TV</a>
-                    </li>
-                    <li>
-                        <a href='{% static "#" %}'><span class="latest-news-time">11:02</span> Opinion: It's time to start talking about impeachment</a>
-                    </li>
-                    <li>
-                        <a href='{% static "#" %}'><span class="latest-news-time">12:37</span> Clinton aims to shore up Wisconsin with new TV ads</a>
-                    </li>
-                    <li>
-                        <a href='{% static "#" %}'><span class="latest-news-time">13:59</span> Trump signs tax bill before leaving for Mar-a-Lago</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    
     <!-- Latest News Marquee Area End -->
 
     <!-- Main Content Area Start -->
@@ -313,39 +178,14 @@
             <div class="row">
                 <div class="col-12 col-lg-9">
                     <!-- Gazette Welcome Post -->
-                    <div class="gazette-welcome-post">
-                        <!-- Post Tag -->
-                        <div class="gazette-post-tag">
-                            <a href='{% static "#" %}'>Politices</a>
-                        </div>
-                        <h2 class="font-pt">What's behind the world obsession with gems?</h2>
-                        <p class="gazette-post-date">March 29, 2016</p>
-                        <!-- Post Thumbnail -->
-                        <div class="blog-post-thumbnail my-5">
-                            <img src='{% static "img/blog-img/1.jpg" %}' alt="post-thumb">
-                        </div>
-                        <!-- Post Excerpt -->
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices egestas nunc, quis venenatis orci tincidunt id. Fusce commodo blandit eleifend. Nullam viverra tincidunt dolor, at pulvinar dui. Nullam at risus ut ipsum viverra posuere. Aliquam quis convallis enim. Nunc pulvinar molestie sem id blandit. Nunc venenatis interdum mollis. Aliquam finibus nulla quam, a iaculis justo finibus non. Suspendisse in fermentum nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices egestas nunc, quis venenatis orci tincidunt id. Fusce commodo blandit eleifend.</p>
-                        <!-- Reading More -->
-                        <div class="post-continue-reading-share d-sm-flex align-items-center justify-content-between mt-30">
-                            <div class="post-continue-btn">
-                                <a href='{% static "#" %}' class="font-pt">Continue Reading <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-                            </div>
-                            <div class="post-share-btn-group">
-                                <a href='{% static "#" %}'><i class="fa fa-pinterest" aria-hidden="true"></i></a>
-                                <a href='{% static "#" %}'><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                                <a href='{% static "#" %}'><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                <a href='{% static "#" %}'><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
+                
 
-                    <div class="gazette-todays-post section_padding_100_50">
+                    {% comment %} <div class="gazette-todays-post section_padding_100_50"> {% endcomment %}
                         <div class="gazette-heading">
-                            <h4>today’s most popular</h4>
+                            <h4>پست های محبوب امروز</h4>
                         </div>
                         <!-- Single Today Post -->
-                        <div class="gazette-single-todays-post d-md-flex align-items-start mb-50">
+                        {% comment %} <div class="gazette-single-todays-post d-md-flex align-items-start mb-50">
                             <div class="todays-post-thumb">
                                 <img src='{% static "img/blog-img/2.jpg" %}' alt="">
                             </div>
@@ -356,30 +196,32 @@
                                 </div>
                                 <h3><a href='{% static "#" %}' class="font-pt mb-2">$250-million mansion is most expensive</a></h3>
                                 <span class="gazette-post-date mb-2">March 29, 2016</span>
-                                <a href='{% static "#" %}' class="post-total-comments">3 Comments</a>
+                                
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices egestas nunc, quis venenatis orci tincidunt id. Fusce commodo blandit eleifend. Nullam viverra tincidunt dolor, at pulvinar dui. Nullam at risus ut ipsum viverra posuere.</p>
                             </div>
-                        </div>
+                        </div> {% endcomment %}
                         <!-- Single Today Post -->
+                        {% for post in popular_news %}
                         <div class="gazette-single-todays-post d-md-flex align-items-start mb-50">
                             <div class="todays-post-thumb">
-                                <img src='{% static "img/blog-img/3.jpg" %}' alt="">
+                                <img src='{{post.image_link}}' alt="">
                             </div>
                             <div class="todays-post-content">
                                 <!-- Post Tag -->
                                 <div class="gazette-post-tag">
-                                    <a href='{% static "#" %}'>Life</a>
+                                    <a href='{% static "#" %}'>{{post.category}}</a>
                                 </div>
-                                <h3><a href='{% static "#" %}' class="font-pt mb-2">Homeless man steals $350,000 </a></h3>
-                                <p class="gazette-post-date mb-2">March 29, 2016</p>
-                                <a href='{% static "#" %}' class="post-total-comments">3 Comments</a>
-                                <p>Aliquam quis convallis enim. Nunc pulvinar molestie sem id blandit. Nunc venenatis interdum mollis. Aliquam finibus nulla quam, a iaculis justo finibus non. Suspendisse in fermentum nunc.</p>
+                                <h3><a href='{% static "#" %}' class="font-pt mb-2">{{post.title}}</a></h3>
+                                <p class="gazette-post-date mb-2">{{post.date}}</p>
+                                
+                                <p>{{post.summary}}</p>
                             </div>
                         </div>
+                        {% endfor %}
                     </div>
                 </div>
 
-                <div class="col-12 col-lg-3 col-md-6">
+                {% comment %} <div class="col-12 col-lg-3 col-md-6">
                     <div class="sidebar-area">
                         <!-- Breaking News Widget -->
                         <div class="breaking-news-widget">
@@ -406,10 +248,10 @@
                                     <h5 class="font-pt">Can a zebra crossing change its stripes?</h5>
                                 </div>
                             </div>
-                        </div>
+                        </div> {% endcomment %}
 
                         <!-- Don't Miss Widget -->
-                        <div class="donnot-miss-widget">
+                        {% comment %} <div class="donnot-miss-widget">
                             <div class="widget-title">
                                 <h5>Don't miss</h5>
                             </div>
@@ -468,11 +310,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> {% endcomment %}
         <!-- Main Content Area End -->
 
         <!-- Catagory Posts Area Start -->
-        <div class="gazette-catagory-posts-area">
+        {% comment %} <div class="gazette-catagory-posts-area">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-4">
@@ -562,8 +404,8 @@
                                     <span>Nov 29, 2017</span>
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                        </div> {% endcomment %}
+                    {% comment %} </div>
                     <div class="col-12 col-md-4">
                         <!-- Single Catagory Post -->
                         <div class="gazette-single-catagory-post">
@@ -594,13 +436,13 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
+            </div> {% endcomment %}
+        {% comment %} </div>
+    </section> {% endcomment %}
     <!-- Catagory Posts Area End -->
 
     <!-- Video Posts Area Start -->
-    <section class="gazatte-video-post-area section_padding_100_70 bg-gray">
+    {% comment %} <section class="gazatte-video-post-area section_padding_100_70 bg-gray">
         <div class="container">
             <div class="row">
                 <!-- Single Video Post Start -->
@@ -712,8 +554,8 @@
                                         <h2><a href='{% static "#" %}' class="font-pt mb-15">Move over, bitcoin. <br>Here comes litecoin</a></h2>
                                         <p class="editorial-post-date mb-15">March 29, 2016</p>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices egestas nunc, quis venenatis orci tincidunt id. Fusce commodo blandit eleifend. Nullam viverra tincidunt dolor, at pulvinar dui. Nullam at risus ut ipsum viverra posuere. Aliquam quis convallis enim. Nunc pulvinar molestie sem id blandit. Nunc venenatis interdum mollis...</p>
-                                    </div>
-                                </div>
+                                    </div> {% endcomment %}
+                                {% comment %} </div>
                             </div>
                         </div>
 
@@ -786,7 +628,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> {% endcomment %}
     <!-- Editorial Area End -->
 
     <!-- Footer Area Start -->
@@ -905,7 +747,7 @@
                     <div class="col-12">
                         <div class="copywrite-text">
                             <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href='{% static "https://colorlib.com" %}' target="_blank">Colorlib</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 </p>
                         </div>
